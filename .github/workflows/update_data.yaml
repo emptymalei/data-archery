@@ -29,8 +29,8 @@ jobs:
           python-version: '3.10'
       - name: Install Python Requirements
         run: |
-          pip install requests
-          pip install pandas
+          pip install requests==2.31.0
+          pip install pandas==2.0.1
       - name: Download new data
         run: |
           python code/update_data.py
@@ -45,4 +45,4 @@ jobs:
       - name: Push changes to repo
         uses: ad-m/github-push-action@v0.6.0
         with:
-          branch: ${{ github.head_ref }}
+          branch: main
