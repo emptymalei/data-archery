@@ -43,6 +43,6 @@ jobs:
           git commit -m "Update Datasets" || echo "Nothing to update"
           git status
       - name: Push changes to repo
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           branch: main
