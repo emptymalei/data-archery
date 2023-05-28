@@ -1,0 +1,158 @@
+{
+    "source": "git",
+    "name": "LMa Archery Data",
+    "id": "lma-archery-dataset",
+    "description": "Dataset about some personal archery related dataset",
+    "uri": "https://github.com/emptymalei/data-archery",
+    "metadata_uri": "https://raw.githubusercontent.com/emptymalei/data-arc/main/dataherb.json",
+    "datapackage": {
+        "profile": "tabular-data-package",
+        "resources": [
+            {
+                "path": "dataset/sensor_data.csv",
+                "profile": "tabular-data-resource",
+                "name": "sensor_data",
+                "format": "csv",
+                "mediatype": "text/csv",
+                "encoding": "utf-8",
+                "schema": {
+                    "fields": [
+                        {
+                            "name": "timestamp",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "number",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "xi",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "angle1",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "angle2",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "angle3",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "calibration",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Title",
+                            "type": "string",
+                            "format": "default"
+                        }
+                    ],
+                    "missingValues": [
+                        ""
+                    ]
+                }
+            },
+            {
+                "path": "dataset/target_data.csv",
+                "profile": "tabular-data-resource",
+                "name": "target_data",
+                "format": "csv",
+                "mediatype": "text/csv",
+                "encoding": "utf-8",
+                "schema": {
+                    "fields": [
+                        {
+                            "name": "Title",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "date",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Standard round",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Indoor",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Bow",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Arrow",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Round",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Distance",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Target",
+                            "type": "string",
+                            "format": "default"
+                        },
+                        {
+                            "name": "End",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Timestamp",
+                            "type": "time",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Points",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "Arrow numbers",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "x",
+                            "type": "number",
+                            "format": "default"
+                        },
+                        {
+                            "name": "y",
+                            "type": "number",
+                            "format": "default"
+                        }
+                    ],
+                    "missingValues": [
+                        ""
+                    ]
+                }
+            }
+        ]
+    }
+}
