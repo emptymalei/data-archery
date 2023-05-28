@@ -4,7 +4,7 @@
     "id": "lma-archery-dataset",
     "description": "Dataset about some personal archery related dataset",
     "uri": "https://github.com/emptymalei/data-archery",
-    "metadata_uri": "https://raw.githubusercontent.com/emptymalei/data-arc/main/dataherb.json",
+    "metadata_uri": "https://raw.githubusercontent.com/emptymalei/data-archery/main/dataherb.json",
     "datapackage": {
         "profile": "tabular-data-package",
         "resources": [
@@ -20,17 +20,20 @@
                         {
                             "name": "timestamp",
                             "type": "number",
-                            "format": "default"
+                            "format": "default",
+                            "description": "the timestamp when shooting the arrow"
                         },
                         {
                             "name": "number",
                             "type": "number",
-                            "format": "default"
+                            "format": "default",
+                            "description": "id of the shooting in the session"
                         },
                         {
                             "name": "xi",
                             "type": "number",
-                            "format": "default"
+                            "format": "default",
+                            "description": "xi value from Bowdometer"
                         },
                         {
                             "name": "angle1",
@@ -55,7 +58,8 @@
                         {
                             "name": "Title",
                             "type": "string",
-                            "format": "default"
+                            "format": "default",
+                            "description": "Title of the session, this is usually taken from MyTargets"
                         }
                     ],
                     "missingValues": [
@@ -75,7 +79,8 @@
                         {
                             "name": "Title",
                             "type": "string",
-                            "format": "default"
+                            "format": "default",
+                            "description": "Title of the training in MyTargets"
                         },
                         {
                             "name": "Date",
