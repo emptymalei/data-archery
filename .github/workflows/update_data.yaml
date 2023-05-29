@@ -34,6 +34,10 @@ jobs:
       - name: Download new data
         run: |
           python code/update_data.py
+      - name: Update charts
+        run: |
+          pip install plotly==5.14.1
+          python code/update_visualization.py
       - name: Update Data
         run: |
           git config --local user.email "action@github.com"
